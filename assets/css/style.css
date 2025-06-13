@@ -6,7 +6,7 @@
 }
 *{box-sizing:border-box;}
 body{margin:0;font-family:system-ui,sans-serif;color:var(--text);}
-header.nav{background:var(--blue-500);padding:.5rem 1rem;}
+header.nav{background:red;padding:.5rem 1rem;}
 header.nav a{color:#fff;margin-right:1rem;text-decoration:none;font-weight:600;}
 main{max-width:var(--max);margin:auto;padding:2rem 1rem;}
 footer{font-size:.875rem;text-align:center;padding:2rem 0;color:var(--blue-900);}
