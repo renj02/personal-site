@@ -3,38 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience</title>
+    <title>Jan Renc - Project Manager & Basketball Referee</title>
+    <meta name="description" content="Project manager, startup finance lead, and top-league basketball referee based in Czechia.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jan Renc - Project Manager & Basketball Referee">
+    <meta property="og:description" content="Project manager, startup finance lead, and top-league basketball referee based in Czechia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://janrenc.com">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <script async src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX'></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
-    </script>
 </head>
 <body>
-    <header class="nav">
-      <nav>
-        <a href='index.html'>Work</a>
-        <a href='startup.html'>Vyslovuj.cz</a>
-        <a href='referee.html'>Referee</a>
-        <a href='contact.html'>Contact</a>
-      </nav>
-    </header>
-    
-    <!-- Page content here -->
-    <main>
-      <h1>Work Experience</h1>
-      <p>Hello! I am Your Name, a professional with experience in technology, startups, and sports. I enjoy building impactful projects and working with diverse teams.</p>
-      <ul>
-        <li>5+ years in software development and project management</li>
-        <li>Founder of Vyslovuj.cz, a speech therapy startup</li>
-        <li>Certified basketball referee for national leagues</li>
-      </ul>
-    </main>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#" class="accent-text">JR</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <footer>
-      © 2025 Your Name | <a href="#top">Back to top</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="blob blob-orange" style="width: 400px; height: 400px; top: -100px; left: -100px;"></div>
+        <div class="container">
+            <h1>Hi, I'm Jan Renc</h1>
+            <p class="accent-text">Project Manager & Basketball Referee</p>
+            <div style="margin-top: var(--spacing-lg);">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#" class="btn btn-secondary" style="margin-left: var(--spacing-md);">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" style="background-color: var(--color-bg-orange);">
+        <div class="container">
+            <h2>About Me</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: center;">
+                <div>
+                    <p>Project manager, startup finance lead, and top-league basketball referee based in Czechia.</p>
+                    <p>I combine my passion for technology, business, and sports to create impactful solutions and experiences.</p>
+                </div>
+                <div style="position: relative;">
+                    <div class="blob blob-lavender" style="width: 300px; height: 300px; right: -50px; bottom: -50px;"></div>
+                    <img src="assets/images/profile.jpg" alt="Jan Renc" style="width: 100%; border-radius: var(--radius-lg);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills & Services</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Project Management</h3>
+                    <p>Leading cross-functional teams to deliver successful projects on time and within budget.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Startup Finance</h3>
+                    <p>Strategic financial planning and business development for early-stage startups.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Sports Officiating</h3>
+                    <p>Certified basketball referee with 12 years of experience in national leagues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section" style="background-color: var(--color-bg-lavender);">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="assets/images/vyslovuj.jpg" alt="Vyslovuj.cz Project">
+                    <div class="portfolio-overlay">
+                        <div>
+                            <h3>Vyslovuj.cz</h3>
+                            <p>AI-powered pronunciation training platform</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more portfolio items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>What People Say</h2>
+            <div class="testimonial-card">
+                <blockquote>
+                    "Jan's leadership and attention to detail have been instrumental in our project's success."
+                </blockquote>
+                <cite>- Project Team Member</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background-color: var(--color-bg-lavender);">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" action="https://formspree.io/f/YOUR_ENDPOINT" method="POST">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-input" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-textarea" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="margin-bottom: var(--spacing-md);">
+                <select aria-label="Language">
+                    <option value="en">English</option>
+                    <option value="cs">Čeština</option>
+                </select>
+            </div>
+            <p>© 2024 Jan Renc. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jan Renc",
+        "jobTitle": "Project Manager & Basketball Referee",
+        "url": "https://janrenc.com",
+        "sameAs": [
+            "https://www.linkedin.com/in/jan-renc/"
+        ]
+    }
+    </script>
 </body>
 </html>
