@@ -1,0 +1,193 @@
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.nav.scrolled {
+    background: rgba(0, 32, 91, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00205B;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #8A2BE2;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #9B4DEB;
+}
+
+/* Timeline styles */
+.work-timeline {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+.work-timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #8A2BE2;
+    transform: translateX(-50%);
+    z-index: 0;
+    border-radius: 2px;
+    opacity: 1;
+}
+.work-bubble {
+    position: relative;
+    width: 48%;
+    min-width: 260px;
+    max-width: 420px;
+    margin: 2.5rem 0;
+    opacity: 0;
+    transform: translateY(80px) rotateX(60deg) scale(0.98);
+    transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+    font-size: 1.1rem;
+    display: none;
+    backface-visibility: hidden;
+    perspective: 800px;
+    z-index: 1;
+}
+.work-bubble.visible {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg) scale(1);
+    display: block;
+}
+.work-bubble.left {
+    left: 0;
+    text-align: right;
+    margin-right: 54%;
+}
+.work-bubble.right {
+    left: 52%;
+    text-align: left;
+    margin-left: 54%;
+}
+.work-bubble-dot {
+    position: absolute;
+    top: 32px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 4px solid #8A2BE2;
+    border-radius: 50%;
+    z-index: 2;
+}
+.work-bubble.left .work-bubble-dot {
+    right: -27px;
+}
+.work-bubble.right .work-bubble-dot {
+    left: -27px;
+}
+@media (max-width: 900px) {
+    .work-bubble, .work-bubble.left, .work-bubble.right {
+        width: 90%;
+        left: 0 !important;
+        margin: 2.5rem auto;
+        text-align: left;
+    }
+    .work-bubble-dot {
+        left: -27px !important;
+        right: auto !important;
+    }
+    .work-timeline-line {
+        left: 16px;
+        transform: none;
+    }
+}
+
+/* Center the work experience section */
+.work-bubble-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+}
+
+/* Debug background for grid */
+.work-bubble-list.work-bubble-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-template-rows: 1fr !important;
+    gap: 2.5rem 2rem !important;
+    justify-items: stretch !important;
+    align-items: stretch !important;
+    margin-top: 2rem !important;
+    width: 100% !important;
+    background: #f0e6ff !important;
+    border: 2px dashed #8A2BE2 !important;
+}
+.work-bubble-list {
+    display: unset !important;
+}
+.work-bubble {
+    position: relative;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    transform: none !important;
+    display: block !important;
+    box-sizing: border-box !important;
+    background: #fffbe6 !important;
+    border: 1px solid #8A2BE2 !important;
+}
+.work-bubble-dot {
+    left: auto !important;
+    right: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.work-bubble.left, .work-bubble.right {
+    left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    color: #333;
+    background: #fff !important;
+} 

@@ -120,16 +120,22 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
+  background-color: transparent;
+  z-index: 100;
+  padding: 1rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.nav.scrolled {
   background-color: var(--color-white);
   box-shadow: var(--shadow-sm);
-  z-index: 100;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 2rem;
 }
 
 .nav-links {
@@ -138,9 +144,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-  color: var(--color-link);
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav.scrolled .nav-link {
+  color: var(--color-link);
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
 }
 
 /* Hero Section */
